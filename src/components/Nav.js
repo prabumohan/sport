@@ -63,6 +63,7 @@ const Nav = () => {
                                 <Dropdown.Menu>
                                     <Dropdown.Item onClick={() => changeLanguage('en')}>English</Dropdown.Item>
                                     <Dropdown.Item onClick={() => changeLanguage('it')}>Italiano</Dropdown.Item>
+                                    <Dropdown.Item onClick={() => changeLanguage('tr')}>Turkey</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
