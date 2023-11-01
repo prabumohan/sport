@@ -16,6 +16,8 @@ const Banner=()=>{
                         <p className="mt-3 mb-lg-5 mb-4 text-dark">{t('banner2')}</p>
                         <Link to='/#home/live'>
                             <span className="btn btn-primary btn-style">{t('getstarted')}</span>
+                            <span className="btn btn-primary btn-style">{t('License')}</span>
+
                         </Link>
                         </div>
                         <div className="col-lg-8 col-xs-12 content-photo mt-lg-0 mt-5">
