@@ -12,7 +12,7 @@ const Services = () => {
                 <div className="features-main py-5 text-center">
                     <div className="container py-lg-3">
                         <div className="heading mx-auto">
-                            <h3 className="head">LET'S DOsdsadasdasd THIS</h3>
+                            <h3 className="head">LET'S DO THIS</h3>
                             <p className="mb-4">Time to get cracking on your scores!</p>
                         </div>
                         <div className="row features">
