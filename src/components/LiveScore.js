@@ -58,7 +58,7 @@ const LiveScore=()=>{
 
     useEffect(()=>{ 
         if(allowedCountries){
-            fetch("https://livescore-api.com/api-client/countries/list.json?&key=gKyo3x5sk0G6MpUA&secret=Fiy9j8SH5l8NWa6dVFBZcHrxH7Dtxy3c")
+            fetch("https://livescore-api.com/api-client/countries/list.json?&key=n02wwRHuy7UxvTbE&secret=cPJ3DbgZhS5fUsahscOZ4vtDDoa8hmMu")
             .then(res=>res.json())
             .then(resp=>{
                 setCountries(resp.data.country.filter((item)=>allowedCountries && allowedCountries.includes(item.name)));
@@ -69,13 +69,13 @@ const LiveScore=()=>{
 
 
     useEffect(()=>{
-        fetch("https://livescore-api.com/api-client/scores/live.json?&key=gKyo3x5sk0G6MpUA&secret=Fiy9j8SH5l8NWa6dVFBZcHrxH7Dtxy3c")
+        fetch("https://livescore-api.com/api-client/scores/live.json?&key=n02wwRHuy7UxvTbE&secret=cPJ3DbgZhS5fUsahscOZ4vtDDoa8hmMu")
         .then(res=>res.json())
         .then(resp=>setLeague(resp.data.match.filter((item)=>item.country?.name===country)))
     },[country])
 
     useEffect(()=>{
-        fetch(`https://livescore-api.com/api-client/countries/flag.json?country_id=${teamId}&key=gKyo3x5sk0G6MpUA&secret=Fiy9j8SH5l8NWa6dVFBZcHrxH7Dtxy3c`)
+        fetch(`https://livescore-api.com/api-client/countries/flag.json?country_id=${teamId}&key=n02wwRHuy7UxvTbE&secret=cPJ3DbgZhS5fUsahscOZ4vtDDoa8hmMu`)
         .then(resp=>{
             setLogo(resp.url)
         })
